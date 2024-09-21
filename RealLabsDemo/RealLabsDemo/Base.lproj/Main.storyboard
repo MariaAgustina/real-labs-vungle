@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3IP-zx-R8m">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealLabsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djc-Xg-gEB">
+                                <rect key="frame" x="20" y="148" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7f0-ro-B0w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Interstitial Ad"/>
+                                <connections>
+                                    <action selector="interstitialAdPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NxV-G5-n1s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqm-cC-AnG">
+                                <rect key="frame" x="20" y="233" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T8R-6z-HS4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rewarded Ad"/>
+                                <connections>
+                                    <action selector="rewardedAdPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqP-2L-708"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooq-Uy-0XH">
+                                <rect key="frame" x="20" y="318" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yDv-KX-W4C"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Banner Ad"/>
+                                <connections>
+                                    <action selector="bannerAdPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11I-AA-k3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWh-we-2CD">
+                                <rect key="frame" x="20" y="403" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x83-Wt-UAe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Native Ad"/>
+                                <connections>
+                                    <action selector="nativeAdPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0Q-Fp-fiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sl3-2G-R4G">
+                                <rect key="frame" x="20" y="488" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="skp-cn-lO8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="App open Ad"/>
+                                <connections>
+                                    <action selector="appOpenAdPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Luv-Xv-dma"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sl3-2G-R4G" secondAttribute="trailing" constant="20" id="BeQ-Dc-DLC"/>
+                            <constraint firstItem="Ooq-Uy-0XH" firstAttribute="top" secondItem="Mqm-cC-AnG" secondAttribute="bottom" constant="45" id="DCe-Db-nB7"/>
+                            <constraint firstItem="Djc-Xg-gEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DMx-5m-YeV"/>
+                            <constraint firstItem="Mqm-cC-AnG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JDQ-lM-S91"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mqm-cC-AnG" secondAttribute="trailing" constant="20" id="Kvj-Un-qem"/>
+                            <constraint firstItem="Sl3-2G-R4G" firstAttribute="top" secondItem="YWh-we-2CD" secondAttribute="bottom" constant="45" id="NG1-yF-8Tm"/>
+                            <constraint firstItem="Mqm-cC-AnG" firstAttribute="top" secondItem="Djc-Xg-gEB" secondAttribute="bottom" constant="45" id="QvR-0l-Ih5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWh-we-2CD" secondAttribute="trailing" constant="20" id="TaJ-HL-ZDg"/>
+                            <constraint firstItem="Djc-Xg-gEB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Tqg-Jm-tNl"/>
+                            <constraint firstItem="Sl3-2G-R4G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UjP-WH-dSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Djc-Xg-gEB" secondAttribute="trailing" constant="20" id="cPz-d0-FTm"/>
+                            <constraint firstItem="YWh-we-2CD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lGR-j3-07W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ooq-Uy-0XH" secondAttribute="trailing" constant="20" id="vdf-cj-9hc"/>
+                            <constraint firstItem="Ooq-Uy-0XH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vsx-0S-p6V"/>
+                            <constraint firstItem="YWh-we-2CD" firstAttribute="top" secondItem="Ooq-Uy-0XH" secondAttribute="bottom" constant="45" id="zZV-7P-IHa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2a-cC-uni"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.60305343511448" y="4.9295774647887329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="198-WU-SCi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3IP-zx-R8m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Fb-PK-YVO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w6W-bd-7JE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhC-n6-sV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
